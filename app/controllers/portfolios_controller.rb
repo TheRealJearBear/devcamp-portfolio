@@ -1,6 +1,7 @@
 class PortfoliosController < ApplicationController
   def index
     @portfolio_items = Portfolio.all
+    #you could do @portfolio_items = Portfolio.includes(:author, :skill) if Portfolio was a JOIN table.
   end
 
   def angular
