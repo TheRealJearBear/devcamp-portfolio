@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  layout "portfolio"
   def index
     @portfolio_items = Portfolio.all
     #you could do @portfolio_items = Portfolio.includes(:author, :skill) if Portfolio was a JOIN table.
@@ -69,7 +70,7 @@ class PortfoliosController < ApplicationController
     params.require(:portfolio).permit(
       :title,
       :subtitle,
-      :body, 
+      :body,
       technologies_attributes: [:name]
     )
   end
