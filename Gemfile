@@ -60,4 +60,4 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
-gem 'jarebear_copyright_view_tool', git: 'https://github.com/TheRealJearBear/jarebear_copyright_view_tool'
+gem 'jarebear_copyright_view_tool', '~> 0.1.0'
