@@ -16,4 +16,7 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+      @copyright = JareBearCopyrightViewTool::Renderer.copyright "Jared Blake", "All rights reserved."
+  end
 end
