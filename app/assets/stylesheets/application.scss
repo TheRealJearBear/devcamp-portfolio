@@ -1,6 +1,6 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-
+@import "font-awesome";
 /*
  * Globals
  */
@@ -152,4 +152,12 @@ body {
   margin: 0 auto;
   float: none;
   margin-top: 2rem;
+}
+
+/*
+* Social Links
+*/
+
+.social-links li {
+  font-size: 4rem;
 }
