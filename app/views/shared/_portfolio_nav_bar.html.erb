@@ -4,28 +4,14 @@
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
           <h4 class="text-white">About Jared</h4>
-          <p class="text-muted">Jared is a renisannce man that doesn't know how to spell very well apparently.  I wish that Atom text editor had a spell check for regular text.</p>
+          <p class="text-muted">Jared is a reniassance man that doesn't know how to spell very well apparently.  I wish that Atom text editor had a spell check for regular text.</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
           <h4 class="text-white">Explore</h4>
           <ul class="list-unstyled">
-            <li>
-            </li><%= link_to "Home", root_path, class: "p-2 text-muted" %>
+            <%= nav_helper "p-2 text-muted", 'li' %>
+            <li><%= login_helper "p-2 text-muted" %></li>
 
-            <li>
-            </li><%= link_to "About Jared", about_path, class: "p-2 text-muted" %>
-
-            <li>
-            </li><%= link_to "Contact", contact_path, class: "p-2 text-muted" %>
-
-            <li>
-            </li><%= link_to "Blogs", blogs_path, class: "p-2 text-muted" %>
-
-            <li>
-            </li><%= link_to "Portfolio", portfolios_path, class: "p-2 text-muted" %>
-
-            <li>
-            </li><%= login_helper "p-2 text-muted" %>
 
           </ul>
         </div>
