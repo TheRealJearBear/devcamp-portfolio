@@ -4,7 +4,7 @@ class PortfoliosController < ApplicationController
   access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
 
   def index
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.by_position
     #you could do @portfolio_items = Portfolio.includes(:author, :skill) if Portfolio was a JOIN table.
   end
 
